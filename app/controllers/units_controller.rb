@@ -1,5 +1,6 @@
 class UnitsController < ApplicationController
   before_action :set_unit, only: [:show, :edit, :update, :destroy]
+  #impressionist :actions=>[:show,:index],:unique => [:impressionable_type, :impressionable_id, :session_hash]
 
   # GET /units
   # GET /units.json
@@ -10,6 +11,7 @@ class UnitsController < ApplicationController
   # GET /units/1
   # GET /units/1.json
   def show
+
   end
 
   # GET /units/new
@@ -62,13 +64,13 @@ class UnitsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_unit
-      @unit = Unit.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_unit
+    @unit = Unit.friendly.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def unit_params
-      params.require(:unit).permit(:name, :description, :no, :element_id, :rarity_id, :base_hp, :base_atk, :base_def, :base_rec, :ls_id, :bb_id, :numhits, :evolve_id, :slug, :thumb_image, :full_image)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def unit_params
+    params.require(:unit).permit(:name, :fullpic, :description, :no, :element, :rarity, :max_lvl, :cost, :hp, :atk, :def, :rec, :leader_skill, :brave_burst, :numhits, :evolution, :obtained, :full_image_loc, :thumb_image_loc)
+  end
 end

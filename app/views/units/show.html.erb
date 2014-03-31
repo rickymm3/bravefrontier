@@ -17,52 +17,42 @@
 
 <p>
   <strong>Element:</strong>
-  <%= @unit.element %>
+  <%= @unit.element_id %>
 </p>
 
 <p>
   <strong>Rarity:</strong>
-  <%= @unit.rarity %>
-</p>
-
-<p>
-  <strong>Max lvl:</strong>
-  <%= @unit.max_lvl %>
-</p>
-
-<p>
-  <strong>Cost:</strong>
-  <%= @unit.cost %>
+  <%= @unit.rarity_id %>
 </p>
 
 <p>
   <strong>Hp:</strong>
-  <%= @unit.hp %>
+  <%= @unit.base_hp %>
 </p>
 
 <p>
   <strong>Atk:</strong>
-  <%= @unit.atk %>
+  <%= @unit.base_atk %>
 </p>
 
 <p>
   <strong>Def:</strong>
-  <%= @unit.def %>
+  <%= @unit.base_def %>
 </p>
 
 <p>
   <strong>Rec:</strong>
-  <%= @unit.rec %>
+  <%= @unit.base_rec %>
 </p>
 
 <p>
   <strong>Leader skill:</strong>
-  <%= @unit.leader_skill %>
+  <%= @unit.ls_id %>
 </p>
 
 <p>
   <strong>Brave burst:</strong>
-  <%= @unit.brave_burst %>
+  <%= @unit.bb_id %>
 </p>
 
 <p>
@@ -72,22 +62,18 @@
 
 <p>
   <strong>Evolution:</strong>
-  <%= @unit.evolution %>
+  <%= @unit.evolve_id %>
 </p>
 
-<p>
-  <strong>Obtained:</strong>
-  <%= @unit.obtained %>
-</p>
 
 <p>
   <strong>Full Pic Loc:</strong>
-  <%= image_tag (@unit.full_image_loc) %>
+  <%= image_tag (@unit.full_image) %>
 </p>
 
 <p>
   <strong>Thumb Pic Loc:</strong>
-  <%= image_tag @unit.thumb_image_loc %>
+  <%= image_tag @unit.thumb_image %>
 </p>
 
 <%= link_to 'Edit', edit_unit_path(@unit) %> |
