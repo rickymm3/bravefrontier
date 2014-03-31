@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Brave Frontier
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+%body
+  =render 'layouts/header'
+  =render 'layouts/nav'
+  =render 'layouts/messages'
+  %div.content
+    = yield
+  %div.widgets
+    %p Active Events
+    %p Top 5 Tier List
+    %p wid3
+  %footer

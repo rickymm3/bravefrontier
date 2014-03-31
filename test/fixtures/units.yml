@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  'no': 1
+  element_id: 1
+  rarity_id: 1
+  base_hp: 1
+  base_atk: 1
+  base_def: 1
+  base_rec: 1
+  ls_id: 1
+  bb_id: 1
+  numhits: 1
+  evolve_id: 1
+  slug: MyString
+  thumb_image: MyString
+  full_image: MyString
+
+two:
+  name: MyString
+  description: MyString
+  'no': 1
+  element_id: 1
+  rarity_id: 1
+  base_hp: 1
+  base_atk: 1
+  base_def: 1
+  base_rec: 1
+  ls_id: 1
+  bb_id: 1
+  numhits: 1
+  evolve_id: 1
+  slug: MyString
+  thumb_image: MyString
+  full_image: MyString

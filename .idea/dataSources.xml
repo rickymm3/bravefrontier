@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="729226632">
+    <data-source source="LOCAL" name="Rails brfr: development" uuid="4b2c532b-64b7-46c8-bd36-52913d487123">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:brfr_development</jdbc-url>
+      <user-name>brfr</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails brfr: test" uuid="2686fb23-a1aa-4731-bf07-2acad00d09d7">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:brfr_test</jdbc-url>
+      <user-name>brfr</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails brfr: production" uuid="0b6ac48d-713a-4d55-b450-960a4bf64bb0">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:brfr_production</jdbc-url>
+      <user-name>brfr</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

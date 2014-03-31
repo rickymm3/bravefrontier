@@ -1,0 +1,90 @@
+<%= form_for(@unit) do |f| %>
+
+    <% if @unit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@unit.errors.count, "error") %> prohibited this unit from being saved:</h2>
+
+      <ul>
+      <% @unit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :no %><br>
+    <%= f.number_field :no %>
+  </div>
+  <div class="field">
+    <%= f.label :element %><br>
+    <%= f.number_field :element %>
+  </div>
+  <div class="field">
+    <%= f.label :rarity %><br>
+    <%= f.number_field :rarity %>
+  </div>
+  <div class="field">
+    <%= f.label :max_lvl %><br>
+    <%= f.number_field :max_lvl %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.number_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :hp %><br>
+    <%= f.number_field :hp %>
+  </div>
+  <div class="field">
+    <%= f.label :atk %><br>
+    <%= f.number_field :atk %>
+  </div>
+  <div class="field">
+    <%= f.label :def %><br>
+    <%= f.number_field :def %>
+  </div>
+  <div class="field">
+    <%= f.label :rec %><br>
+    <%= f.number_field :rec %>
+  </div>
+  <div class="field">
+    <%= f.label :leader_skill %><br>
+    <%= f.number_field :leader_skill %>
+  </div>
+  <div class="field">
+    <%= f.label :brave_burst %><br>
+    <%= f.number_field :brave_burst %>
+  </div>
+  <div class="field">
+    <%= f.label :numhits %><br>
+    <%= f.number_field :numhits %>
+  </div>
+  <div class="field">
+    <%= f.label :evolution %><br>
+    <%= f.number_field :evolution %>
+  </div>
+  <div class="field">
+    <%= f.label :obtained %><br>
+    <%= f.number_field :obtained %>
+  </div>
+  <div class="field">
+    <%= f.label :full_image_loc %><br>
+    <%= f.text_field :full_image_loc %>
+  </div>
+  <div class="field">
+    <%= f.label :thumb_image_loc %><br>
+    <%= f.text_field :thumb_image_loc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

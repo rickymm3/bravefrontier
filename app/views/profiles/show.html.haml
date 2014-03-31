@@ -1,0 +1,11 @@
+%div.info
+  %label
+    Username:
+    = @profile.username
+    %br
+  %label
+    Description:
+    = @profile.description
+    %br
+= link_to 'Edit', edit_profile_path(@profile) |
+-#= link_to 'Back', profiles_path

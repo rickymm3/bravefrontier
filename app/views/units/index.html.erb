@@ -1,0 +1,57 @@
+<h1>Listing units</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>No</th>
+      <th>Element</th>
+      <th>Rarity</th>
+      <th>Base hp</th>
+      <th>Base atk</th>
+      <th>Base def</th>
+      <th>Base rec</th>
+      <th>Ls</th>
+      <th>Bb</th>
+      <th>Numhits</th>
+      <th>Evolve</th>
+      <th>Slug</th>
+      <th>Thumb image</th>
+      <th>Full image</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @units.each do |unit| %>
+      <tr>
+        <td><%= unit.name %></td>
+        <td><%= unit.description %></td>
+        <td><%= unit.no %></td>
+        <td><%= unit.element_id %></td>
+        <td><%= unit.rarity_id %></td>
+        <td><%= unit.base_hp %></td>
+        <td><%= unit.base_atk %></td>
+        <td><%= unit.base_def %></td>
+        <td><%= unit.base_rec %></td>
+        <td><%= unit.ls_id %></td>
+        <td><%= unit.bb_id %></td>
+        <td><%= unit.numhits %></td>
+        <td><%= unit.evolve_id %></td>
+        <td><%= unit.slug %></td>
+        <td><%= unit.thumb_image %></td>
+        <td><%= unit.full_image %></td>
+        <td><%= link_to 'Show', unit %></td>
+        <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
+        <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unit', new_unit_path %>
