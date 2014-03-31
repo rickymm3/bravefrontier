@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="1140">
+            <state line="52" column="18" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.5064011" vertical-offset="424" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="893" selection-end="893" vertical-scroll-proportion="0.33854908" vertical-offset="392" max-vertical-offset="1500">
+            <state line="57" column="17" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -669,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="17" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
@@ -734,7 +727,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="893" selection-end="893" vertical-scroll-proportion="0.33854908" vertical-offset="392" max-vertical-offset="1500">
+        <state line="57" column="17" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="18" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.5064011" vertical-offset="424" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>
