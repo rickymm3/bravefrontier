@@ -6,7 +6,14 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
 
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -26,8 +33,7 @@ group :doc do
 end
 
 #custom gems
-gem 'sass-rails'
-gem 'compass-rails'
+
 gem 'haml'
 gem 'devise'
 gem "mysql2"
@@ -36,7 +42,6 @@ gem "twitter-bootstrap-rails"
 gem "binding_of_caller"
 gem "impressionist"
 gem "friendly_id"
-
 group :development do
   gem 'better_errors'
   gem 'pry-rails'
