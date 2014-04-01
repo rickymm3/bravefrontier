@@ -1,0 +1,132 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$elements-sprite-base-class: ".elements-sprite" !default;
+$elements-sprite-dimensions: false !default;
+$elements-position: 0% !default;
+$elements-spacing: 0 !default;
+$elements-repeat: no-repeat !default;
+$elements-prefix: '' !default;
+$elements-clean-up: true !default;
+$elements-layout:vertical !default;
+$elements-inline: false !default;
+
+  
+ // These variables control the generated sprite output
+ // You can override them selectively before you import this file.
+ 
+   $elements-dark-position: $elements-position !default;
+   $elements-dark-spacing:  $elements-spacing !default;
+   $elements-dark-repeat:   $elements-repeat !default;
+ 
+   $elements-earth-position: $elements-position !default;
+   $elements-earth-spacing:  $elements-spacing !default;
+   $elements-earth-repeat:   $elements-repeat !default;
+ 
+   $elements-fire-position: $elements-position !default;
+   $elements-fire-spacing:  $elements-spacing !default;
+   $elements-fire-repeat:   $elements-repeat !default;
+ 
+   $elements-light-position: $elements-position !default;
+   $elements-light-spacing:  $elements-spacing !default;
+   $elements-light-repeat:   $elements-repeat !default;
+ 
+   $elements-multi-position: $elements-position !default;
+   $elements-multi-spacing:  $elements-spacing !default;
+   $elements-multi-repeat:   $elements-repeat !default;
+ 
+   $elements-thunder-position: $elements-position !default;
+   $elements-thunder-spacing:  $elements-spacing !default;
+   $elements-thunder-repeat:   $elements-repeat !default;
+ 
+   $elements-water-position: $elements-position !default;
+   $elements-water-spacing:  $elements-spacing !default;
+   $elements-water-repeat:   $elements-repeat !default;
+ 
+
+ $elements-sprites: sprite-map("elements/*.png",
+ 
+   $elements-dark-position: $elements-dark-position, 
+   $elements-dark-spacing:  $elements-dark-spacing, 
+   $elements-dark-repeat:   $elements-dark-repeat,
+ 
+   $elements-earth-position: $elements-earth-position, 
+   $elements-earth-spacing:  $elements-earth-spacing, 
+   $elements-earth-repeat:   $elements-earth-repeat,
+ 
+   $elements-fire-position: $elements-fire-position, 
+   $elements-fire-spacing:  $elements-fire-spacing, 
+   $elements-fire-repeat:   $elements-fire-repeat,
+ 
+   $elements-light-position: $elements-light-position, 
+   $elements-light-spacing:  $elements-light-spacing, 
+   $elements-light-repeat:   $elements-light-repeat,
+ 
+   $elements-multi-position: $elements-multi-position, 
+   $elements-multi-spacing:  $elements-multi-spacing, 
+   $elements-multi-repeat:   $elements-multi-repeat,
+ 
+   $elements-thunder-position: $elements-thunder-position, 
+   $elements-thunder-spacing:  $elements-thunder-spacing, 
+   $elements-thunder-repeat:   $elements-thunder-repeat,
+ 
+   $elements-water-position: $elements-water-position, 
+   $elements-water-spacing:  $elements-water-spacing, 
+   $elements-water-repeat:   $elements-water-repeat,
+ 
+ $layout: $elements-layout,
+ $cleanup: $elements-clean-up
+ );
+
+
+// All sprites should extend this class
+// The elements-sprite mixin will do so for you.
+@if $elements-inline {
+  #{$elements-sprite-base-class} {
+    background-image: inline-sprite($elements-sprites);
+  } 
+} @else {
+  #{$elements-sprite-base-class} {
+    background: $elements-sprites no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function elements-sprite-width($name) {
+    $file: sprite_file($elements-sprites, $name);
+    @return image-width($file);
+  }
+
+  @function elements-sprite-height($name) {
+    $file: sprite_file($elements-sprites, $name);
+    @return image-height($file);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin elements-sprite-dimensions($name) {
+  @include sprite-dimensions($elements-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin elements-sprite-position($name, $offset-x: 0, $offset-y: 0) {
+  @include sprite-background-position($elements-sprites, $name, $offset-x, $offset-y)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin elements-sprite($name, $dimensions: $elements-sprite-dimensions, $offset-x: 0, $offset-y: 0) {
+  @extend #{$elements-sprite-base-class};
+  @include sprite($elements-sprites, $name, $dimensions, $offset-x, $offset-y)
+}
+
+@mixin elements-sprites($sprite-names, $dimensions: $elements-sprite-dimensions, $prefix: sprite-map-name($elements-sprites), $offset-x: 0, $offset-y: 0) {
+  @include sprites($elements-sprites, $sprite-names, $elements-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y)
+}
+
+// Generates a class for each sprited image.
+@mixin all-elements-sprites($dimensions: $elements-sprite-dimensions, $prefix: sprite-map-name($elements-sprites), $offset-x: 0, $offset-y: 0) {
+  @include elements-sprites(dark earth fire light multi thunder water, $dimensions, $prefix, $offset-x, $offset-y);
+}

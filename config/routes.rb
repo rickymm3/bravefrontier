@@ -1,4 +1,6 @@
 Brfr::Application.routes.draw do
+  resources :elements
+
   #devise_for :users
   resources :units
 

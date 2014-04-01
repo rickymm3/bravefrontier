@@ -14,9 +14,11 @@
  *= require bootstrap-wysihtml5
  */
 
+//@import 'compass/utilities/sprites';
+@import 'elements/*.png';
+@include all-elements-sprites;
 
 /*clearfix*/
-
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
