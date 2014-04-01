@@ -11,11 +11,14 @@
  *= require_self
  *= require_tree .
  *= require twitter-bootstrap-static/bootstrap.css.erb
- *= require bootstrap-wysihtml5
+// *= require bootstrap-wysihtml5
  */
 
-
 /*clearfix*/
+@import 'compass';
+@import "compass/utilities/sprites";
+@import "elements/*.png";
+@include all-elements-sprites;
 
 .cf:before,
 .cf:after {
