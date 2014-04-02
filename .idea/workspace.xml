@@ -70,6 +70,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="0" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.41977078" vertical-offset="397" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="guides.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/guides.css.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/units/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="22" selection-start="169" selection-end="169" vertical-scroll-proportion="0.19285715" vertical-offset="0" max-vertical-offset="700">
+            <state line="9" column="22" selection-start="169" selection-end="169" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -335,7 +344,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Brave-Frontier" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistory" value="unit&#10;gemfile&#10;route" />
+    <property name="SearchEverywhereHistory" value="gemfile&#10;unit&#10;route" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -810,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="291" selection-end="291" vertical-scroll-proportion="-6.3461537" vertical-offset="0" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140402022814_change_prefix_column_units.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
@@ -905,7 +907,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/units/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="169" selection-end="169" vertical-scroll-proportion="0.19285715" vertical-offset="0" max-vertical-offset="700">
+        <state line="9" column="22" selection-start="169" selection-end="169" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.41977078" vertical-offset="397" max-vertical-offset="1095">
           <folding />
         </state>
       </provider>
