@@ -1,6 +1,3 @@
-User.create!([
-  {email: "rickymm3@gmail.com", encrypted_password: "$2a$10$2Q1TbR.to2tBpWGNNvQIP.TwmvZs20B92JEEbSNv4e5KXgkYXza2W", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 2, current_sign_in_at: "2014-04-01 23:15:48", last_sign_in_at: "2014-03-31 17:45:10", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
-])
 Element.create!([
   {name: "fire"},
   {name: "water"},
