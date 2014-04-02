@@ -1,10 +1,14 @@
 
 
 <p id="notice"><%= notice %></p>
+<p>
+  <strong>Real Name:</strong>
+  <%= @unit.realname %>
+</p>
 
 <p>
   <strong>Name:</strong>
-  <%= @unit.prefix %> <%= @unit.name %>
+  <%= @unit.name %>
 </p>
 
 <p>
@@ -19,14 +23,12 @@
 
 <p>
   <strong>Element:</strong>
-  <div class="elements-small">
-    <div class="<%= Element.get_element_class(@unit.element_id) %>"></div>
-  </div>
+  <%= image_tag(@unit.elements, class:'elements-small') %>
 </p>
 
 <p>
   <strong>Rarity:</strong>
-  <%= @unit.rarity_id %>
+  <%= @unit.rarity_id %> "<i class='fa fa-star'></i>"
 </p>
 
 <p>
