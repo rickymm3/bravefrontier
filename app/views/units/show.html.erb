@@ -1,4 +1,4 @@
-<%= element = Element.get_element_string(@unit.element_id) %>
+
 
 <p id="notice"><%= notice %></p>
 
@@ -20,7 +20,7 @@
 <p>
   <strong>Element:</strong>
   <div class="elements-small">
-    <div class="<%= element %>"></div>
+    <div class="<%= Element.get_element_class(@unit.element_id) %>"></div>
   </div>
 </p>
 

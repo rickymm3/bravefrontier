@@ -7,7 +7,7 @@
     = csrf_meta_tags
 %body
   =render 'layouts/header'
-  =render 'layouts/nav'
+
   =render 'layouts/messages'
   %div.content
     = yield
@@ -16,3 +16,5 @@
     %p Top 5 Tier List
     %p wid3
   %footer
+
+  =render 'layouts/nav'
