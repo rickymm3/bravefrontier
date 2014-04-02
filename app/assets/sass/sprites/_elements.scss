@@ -130,3 +130,4 @@ $elements-inline: false !default;
 @mixin all-elements-sprites($dimensions: $elements-sprite-dimensions, $prefix: sprite-map-name($elements-sprites), $offset-x: 0, $offset-y: 0) {
   @include elements-sprites(dark earth fire light multi thunder water, $dimensions, $prefix, $offset-x, $offset-y);
 }
+

@@ -15,10 +15,7 @@
       <th>Ls</th>
       <th>Bb</th>
       <th>Numhits</th>
-      <th>Evolve</th>
       <th>Slug</th>
-      <th>Thumb image</th>
-      <th>Full image</th>
       <th></th>
       <th></th>
       <th></th>
@@ -28,8 +25,8 @@
   <tbody>
     <% @units.each do |unit| %>
       <tr>
-        <td><%= unit.name %></td>
-        <td><%= unit.description %></td>
+        <td><%= unit.prefix %> <%= unit.name %></td>
+        <td>-ommitted-</td>
         <td><%= unit.no %></td>
         <td><%= unit.element_id %></td>
         <td><%= unit.rarity_id %></td>
@@ -40,10 +37,7 @@
         <td><%= unit.ls_id %></td>
         <td><%= unit.bb_id %></td>
         <td><%= unit.numhits %></td>
-        <td><%= unit.evolve_id %></td>
         <td><%= unit.slug %></td>
-        <td><%= unit.thumb_image %></td>
-        <td><%= unit.full_image %></td>
         <td><%= link_to 'Show', unit %></td>
         <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
         <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>

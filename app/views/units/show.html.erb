@@ -1,8 +1,10 @@
+<%= element = Element.get_element_string(@unit.element_id) %>
+
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
-  <%= @unit.name %>
+  <%= @unit.prefix %> <%= @unit.name %>
 </p>
 
 <p>
@@ -17,7 +19,9 @@
 
 <p>
   <strong>Element:</strong>
-  <%= @unit.element_id %>
+  <div class="elements-small">
+    <div class="<%= element %>"></div>
+  </div>
 </p>
 
 <p>
@@ -60,21 +64,6 @@
   <%= @unit.numhits %>
 </p>
 
-<p>
-  <strong>Evolution:</strong>
-  <%= @unit.evolve_id %>
-</p>
-
-
-<p>
-  <strong>Full Pic Loc:</strong>
-  <%= image_tag (@unit.full_image) %>
-</p>
-
-<p>
-  <strong>Thumb Pic Loc:</strong>
-  <%= image_tag @unit.thumb_image %>
-</p>
 
 <%= link_to 'Edit', edit_unit_path(@unit) %> |
 <%= link_to 'Back', units_path %>

@@ -16,7 +16,14 @@
 
 //@import 'compass/utilities/sprites';
 @import 'elements/*.png';
+@import 'resize';
+@import 'compass/css3';
+$elements-sprite-dimensions: true;
 @include all-elements-sprites;
+
+.elements-small { // overriding all sprites
+  @include resize-sprite-set($elements-sprites, 50); // 40% sized
+}
 
 /*clearfix*/
 .cf:before,
@@ -41,8 +48,6 @@ header {
     float:right;
 }
 }
-
-
 
 body {
 .content {
@@ -94,3 +99,6 @@ body {
     text-align: left;
 }
 
+.left {
+  float: left;
+}
