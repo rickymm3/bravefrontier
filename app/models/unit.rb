@@ -20,8 +20,14 @@ class Unit < ActiveRecord::Base
     end
   end
 
+  def full_image
+    s = 'units/full/'+self.slug.to_s+'.png'
+    Image.check_image(s)
+  end
+
   def avatar
-    'units/avatars/'+self.slug+'.png'
+    s = 'units/avatars/'+self.slug.to_s+'.png'
+    Image.check_image(s)
   end
 
 end

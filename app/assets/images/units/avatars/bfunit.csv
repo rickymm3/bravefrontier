@@ -1,0 +1,327 @@
+1,Fencer Vargas,1,2,2,12,3,5,204,300,Fire Spirit's Power,Flare Ride,Damage
+2,Burning Vargas,1,3,4,40,3,5,508,1000,Fire Spirit's Power,Flare Ride Plus,Damage
+3,Fire King Vargas,1,4,8,60,4,6,1016,2500,Fire God's Power,Infinity Burst,Damage
+4,Fire God Vargas,1,5,10,80,6,6,1520,5000,Fire God's Power,Infinity Nova,Damage
+5,Selena,2,2,2,12,2,4,,,Water Spirit's Power,Estreal Blade,Damage
+6,Ice Selena,2,3,4,40,2,5,,,Water Spirit's Power,Divine Hale,Damage
+7,Ice Queen Selena,2,4,8,60,4,7,,,Water God's Power,Blizzard Pain,Damage
+8,Ice God Selena,2,5,10,80,4,8,,,Water God's Power,Absolute Zero,Damage
+9,Pikeman Lance,6,2,2,12,3,4,,,Earth Spirit's Power,Flash Gale,Damage
+10,Vine Pike Lance,6,3,4,40,4,5,,,Earth Spirit's Power,Flash Tornado,Damage
+11,Earth Pike Lance,6,4,8,60,4,5,,,Earth God's Power,Mystral Rage,Damage
+12,Nature God Lance,6,5,10,80,4,6,,,Earth God's Power,Eternal Zephyr,Damage
+13,Warrior Eze,5,2,2,12,1,2,,,Thunder Spirit's Power,Thunder Explosion,Damage
+14,Thunder Eze,5,3,4,40,1,2,,,Thunder Spirit's Power,Thunder Execution,Damage
+15,Thunder King Eze,5,4,8,60,2,5,,,Thunder God's Power,Thunder Retribution,Damage
+16,Thunder God Eze,5,5,10,80,5,7,,,Thunder God's Power,Heavenly Thunder,Damage
+17,Squire Atro,3,2,2,12,1,2,,,Light Spirit's Power,Divine Sword,Damage
+18,Knight Atro,3,3,4,40,1,3,,,Light Spirit's Power,Cardinal Judgement,Damage
+19,Holy Knight Atro,3,4,8,60,2,4,,,Light God's Power,Thousand Nemesis,Damage
+20,God Atro,3,5,10,80,3,5,,,Light God's Power,Messiah Hazzard,Damage
+21,Iron Magress,4,2,2,12,1,3,,,Dark Spirit's Power,Guilty Ash,Damage
+22,Heavy Magress,4,3,4,40,1,4,,,Dark Spirit's Power,Gravity Eclipse,Damage
+23,Black Magress,4,4,8,60,2,4,,,Dark God's Power,Void Pillar,Damage
+24,Death Magress,4,5,10,80,3,6,,,Dark God's Power,Vermillion Tower,Damage
+25,Beast Zegar,1,2,3,30,2,2,206,300,Intense Light,Fire Claw Attack,Damage
+26,Rage Beast Zegar,1,3,5,40,4,5,510,1000,Intense Flash,Fire Spring Attack,Damage
+27,Fire Beast Zegar,1,4,9,60,7,7,1018,2500,Intense Strobe,Hell Twins Attack,Damage
+28,Zephu,2,2,3,30,3,4,,,Intense Light,Raising Needle,Damage
+29,Knight Zephu,2,3,5,40,4,5,,,Intense Flash,Raising Ballad,Damage
+30,Dragoon Zephu,2,4,9,60,5,6,,,Intense Strobe,Raising Glory,Damage
+31,Archer Lario,6,2,3,30,3,3,,,Fighting Light,Carnage Sky,Damage
+32,Marksman Lario,6,3,5,40,3,3,,,Fighting Flash,Superior Needle,Damage
+33,Hawkeye Lario,6,4,9,60,6,6,,,Fighting Strobe,Shooting Star,Damage
+34,Advisor Weiss,5,2,3,30,3,B,,,Fighting Light,Thunder's Command,Support
+35,Strategist Weiss,5,3,5,40,5,B,,,Fighting Flash,Thunder's Rage,Support
+36,Commander Weiss,5,4,9,60,6,B,,,Fighting Strobe,Thunder's Reign,Support
+37,Luna,3,2,3,30,2,2,,,Fighting Light,Rude Thrust,Damage
+38,Sunshine Luna,3,3,5,40,3,3,,,Fighting Flash,Crude Stab,Damage
+39,Holy Queen Luna,3,4,9,60,4,4,,,Fighting Strobe,Vulgar Jab,Damage
+40,Mifune,4,2,3,30,2,2,,,Intense Light,Special Moonbeam,Damage
+41,Samurai Mifune,4,3,5,40,3,3,,,Intense Flash,Special Swordflash,Damage
+42,God Blade Mifune,4,4,9,60,4,4,,,Intense Strobe,Special Aurora Flash,Damage
+43,Burny,1,1,1,10,,,153,100,,Gnawing Flame,Damage
+44,King Burny,1,2,3,30,,,,,Fire's Protection,Flame Munch,Damage
+45,Squirty,2,1,1,10,,,,,,Gnawing Water,Damage
+46,King Squirty,2,2,3,30,,,,,Water's Protection,Water Munch,Damage
+47,Mossy,6,1,1,10,,,,,,Gnawing Wood,Damage
+48,King Mossy,6,2,3,30,,,,,Earth's Protection,Wood Munch,Damage
+49,Sparky,5,1,1,10,,,,,,Gnawing Shock,Damage
+50,King Sparky,5,2,3,30,,,,,Thunder's Protection,Shock Munch,Damage
+51,Glowy,3,1,1,10,,,,,,Gnawing Photon,Damage
+52,King Glowy,3,2,3,30,,,,,Light's Protection,Photon Munch,Damage
+53,Gloomy,4,1,1,10,,,,,,Gnawing Shadow,Damage
+54,King Gloomy,4,2,3,30,,,,,Dark's Protection,Shadow Munch,Damage
+55,Witch Liza,1,1,2,15,3,3,104,100,Fire's Protection,Eruption,Damage
+56,Warlock Liza,1,2,4,30,5,5,,,Fire's Protection,Explosion,Damage
+57,Priest Merith,2,1,2,15,3,H,,,Water's Protection,Curing,Healing
+58,Healer Merith,2,2,4,30,5,H,,,Water's Protection,Cure Light,Healing
+59,Geomancer Claris,6,1,2,15,3,H,,,Earth's Protection,Earth's Water,Healing
+60,Time Mage Claris,6,2,4,30,5,H,,,Earth's Protection,Arcanadia,Healing
+61,Dancer May,5,1,2,15,3,H,,,Thunder's Protection,Thunder Dance,Healing
+62,High Dancer May,5,2,4,30,5,H,,,Thunder's Protection,Cure Drill,Healing
+63,Sage Mimir,3,1,2,15,3,H,,,Light's Protection,Milky Way,Healing
+64,Light LordMimir,3,2,4,30,5,H,,,Light's Protection,Saint Benediction,Healing
+65,Sorceress Lily,4,1,2,15,3,4,,,Dark's Protection,Albatross' Glory,Damage
+66,Magician Lily,4,2,4,30,5,6,,,Dark's Protection,Soul Intention,Damage
+67,Goblin,1,1,2,12,1,4,104,100,,Goblin Attack,Damage
+68,Redcap,1,2,4,30,1,5,,,Fighting Light,Red Strike,Damage
+69,Merman,2,1,2,12,2,4,,,,Spiral Lance,Damage
+70,Sahuagin,2,2,4,30,4,3,,,Fighting Light,Dancing Charge,Damage
+71,Mandragora,6,1,2,12,3,B,,,,Power Scream,Support
+72,Polevik,6,2,4,30,4,B,,,Earth's Protection,Power Intension,Support
+73,Harpy,5,1,2,12,3,B,,,,Wind Armor,Support
+74,Aero,5,2,4,30,6,B,,,Soul Light,Wind Protection,Support
+75,Angel,3,1,2,12,1,2,,,,Light Sword,Damage
+76,Archangel,3,2,4,30,2,3,,,Pure Ligh,Blessed Sword,Damage
+77,Skeleton,4,1,2,12,2,1,,,,Bone Smash,Damage
+78,Skeleton King,4,2,4,30,2,3,,,Soul Light,Vorpal Shock,Damage
+79,Thief Leon,1,2,3,30,4,4,206,300,Abundant Light,Poison Gale,Damage
+80,Head Thief Leon,1,3,6,40,6,6,768,1000,Abundant Flash,Venom Gale,Damage
+81,Pirate Verica,2,2,3,30,2,2,,,Pure Light,Crazy Slash,Damage
+82,Plunderer Verica,2,3,6,40,4,4,,,Pure Shining,Maximum VWater,Damage
+83,Bandit Zaza,6,2,3,30,4,4,,,Intense Light,Great Beheading,Damage
+84,Head Bandit Zaza,6,3,6,40,5,5,,,Intense Flash,Warrior's Execution,Damage
+85,Sky Pirate Grafl,5,2,3,30,3,3,,,Fighting Light,Lightning Magnum,Damage
+86,Sky Boss Grafl,5,3,6,40,6,9,,,Fighting Flash,Chariot Magnum,Damage
+87,Orthos,1,2,2,30,2,2,206,300,,Heat Bite,Damage
+88,Cerberus,1,3,5,40,5,3,510,1000,Soul Light,Keeper Fang,Damage
+89,Ramia,2,2,2,30,2,2,,,,Snake Ripsaw,Damage
+90,Scylla,2,3,5,40,4,4,,,Soul Light,Cold Torture,Damage
+91,Fairy,6,2,2,30,3,H,,,,Spirit's Song,Healing
+92,Titania,6,3,5,40,4,H,,,Loving Spirit,Peaceful Hymn,Healing
+93,Minotaur,5,2,2,30,1,2,,,,All Out Attack,Damage
+94,Cyclops,5,3,5,40,5,3,,,Soul Light,Destructive Attack,Damage
+95,Unicorn,3,2,3,30,5,6,,,,Mirage Horn,Damage
+96,Pegasus,3,3,6,40,5,7,,,Pure Shining,Tornado Charge,Damage
+97,Medusa,4,2,3,30,3,4,,,Soul Light,Golgon Eye,Damage
+98,Zahhak,4,3,6,40,5,4,,,Soul Flash,Black Snake Heart,Damage
+99,Salamander,1,2,2,30,3,B,204,300,,Blaze Force,Support
+100,Ifrit,1,3,4,40,6,B,508,1000,Fighting Light,Hell Blaze,Support
+101,Rantoul,2,2,2,30,3,H,,,,Recure Rise,Healing
+102,Legtos,2,3,4,40,5,H,,,Pure Light,Life Breath,Healing
+103,Trent,6,2,2,30,3,3,,,,Terra Firma,Damage
+104,Ent,6,3,4,40,5,5,,,Soul Light,Grand Storm,Damage
+105,Sylph,5,2,2,30,3,B,,,,Soul Feathers,Support
+106,Djin,5,3,4,40,5,B,,,Fighting Light,Lost Soul Crystal,Support
+107,Priestess Maria,3,2,2,30,3,H,,,Loving Spirit,Holy Prayer,Healing
+108,Angel Maria,3,3,4,40,5,H,,,Loving Spirit,Saint's Gospel,Healing
+109,Lilin,4,2,2,30,6,B,,,Pure Light,Monster Dance,Support
+110,Succubus,4,3,4,40,6,B,,,Pure Light,Demon Kiss,Support
+111,Firedrake,1,3,5,40,3,3,,,Fire's Protection,Fire Breath,Damage
+112,Dragon Graven,1,4,8,60,5,5,1016,2500,Fire's Protection,Mega Breath,Damage
+113,Undine,2,3,5,40,3,B,,,Water's Protection,Prism Shower,Support
+114,Siren,2,4,8,60,5,B,,,Water's Protection,Miracle Shower,Support
+115,Dryad,6,3,5,40,3,B,,,Earth's Protection,Manalight Circle,Support
+116,High Elf,6,4,8,60,5,B,,,Earth's Protection,Elemental Wall,Support
+117,Thunderbird,5,3,5,40,3,5,,,Thunder's Protection,Thunderstorm,Damage
+118,Great Falcon Ziz,5,4,8,60,4,5,,,Thunder's Protection,Valza Riser,Damage
+119,Valkyrie,3,3,5,40,5,4,,,Light's Protection,Sar Air Raid,Damage
+120,Sky Hero Athena,3,4,8,60,6,7,,,Light's Protection,Valkyrie Tempest,Damage
+121,Vampire,4,3,5,40,3,3,,,Dark's Protection,Blood Gluttony,Damage
+122,Lich,4,4,8,60,5,5,,,Dark's Protection,Abyss Gale,Damage
+123,Knight Agni,1,3,5,40,8,8,,,Valiant Power,Dragon's Expulsion,Damage
+124,Fire Knight Agni,1,4,8,60,9,9,1524,2500,Royal Power,Dragon's Execution,Damage
+125,Knight Sergio,2,3,5,40,2,5,,,Valiant Power,Frigid Combo,Damage
+126,Water Ruler Sergio,2,4,8,60,5,7,,,Royal Power,Royal Water Blade,Damage
+127,Princess Lidlith,6,3,5,40,6,6,,,Valiant Power,Royal SlWater,Damage
+128,Queen Lidlith,6,4,8,60,8,8,,,Royal Power,Royal Slash,Damage
+129,Sky Knight Falma,5,3,5,40,5,5,,,Valiant Power,Flash Stream,Damage
+130,Sky King Falma,5,4,8,60,7,7,,,Royal Power,Dual Arch,Damage
+131,Cowboy Heidt,3,3,5,40,5,5,,,Valiant Power,Holy Ray,Damage
+132,Holy Shot Heidt,3,4,8,60,10,10,,,Royal Power,Star Children,Damage
+133,Shida,4,3,5,40,6,6,,,Valiant Power,Catastrophe,Damage
+134,Garroter Shida,4,4,8,60,8,8,,,Royal Power,Dark Matter,Damage
+135,Phoenix,1,3,5,40,3,H,510,1000,Loving Spirit,Burning Feather,Healing
+136,Lava Phoenix,1,4,8,60,4,H,,,Loving Spirit,Ignited Feather,Healing
+137,God Phoenix,1,5,12,80,6,H,,,Loving Devotion,Phoenix Feather,Healing
+138,Leviathan,2,3,5,40,3,4,,,Ares' Light,Tidal Wave,Damage
+139,Loch Ness,2,4,8,60,4,5,,,Ares' Light,Maelstrom,Damage
+140,Malnaplus,2,5,12,80,5,6,,,Ares' Authority,Calamity Wave,Damage
+141,Great Tree Alneu,6,3,5,40,3,H,,,Loving Spirit,Lucent Purge,Healing
+142,World Tree Altro,6,4,8,60,4,H,,,Loving Spirit,Benevolence Purge,Healing
+143,God Tree Eltri,6,5,12,80,6,H,,,Loving Devotion,God Purge,Healing
+144,Behemoth,5,3,5,40,1,2,,,Intense Light,Crash Bind,Damage
+145,King Behemoth,5,4,8,60,3,3,,,Intense Flash,Meteor Zapper,Damage
+146,Alpha Behemoth,5,5,12,80,3,4,,,Intense Strobe,Rodmagia Grudge,Damage
+147,Wyvern,3,3,5,40,3,4,,,Ares' Light,Dragon VoWater,Damage
+148,Bahamut,3,4,8,60,4,5,,,Ares' Light,Genocide Blaster,Damage
+149,Rameldria,3,5,12,80,5,6,,,Ares' Authority,Skydragon Gun,Damage
+150,Memetes,4,3,5,40,3,4,,,Intense Light,Climb Pain,Damage
+151,Hell King Hades,4,4,8,60,4,5,,,Intense Flash,Chaos Fall,Damage
+152,Death God Lodaga,4,5,12,80,4,6,,,Intense Strobe,World of Darkness,Damage
+153,Lava,1,3,5,40,3,4,510,1000,Fire Spirit's Power,Blazing Inferno,Damage
+154,Fire Knight Lava,1,4,8,60,4,5,,,Fire God's Power,Prometheus Burn,Damage
+155,Fire God Lava,1,5,12,80,7,10,1524,5000,Fire God's Power,Anguish Blade,Damage
+156,Captain Mega,2,3,5,40,3,4,,,Water Spirit's Power,Ocean Whirlpool,Damage
+157,War Captain Mega,2,4,8,60,4,5,,,Water God's Power,Tempest Gallows,Damage
+158,Commander Mega,2,5,12,80,6,6,,,Water God's Power,Cyclone Disaster,Damage
+159,Gunner Douglas,6,3,5,40,8,10,,,Earth Spirit's Power,Zafonic Bullet,Damage
+160,Gun King Douglas,6,4,8,60,10,15,,,Earth God's Power,Genocidal Grit,Damage
+161,Gun God Douglas,6,5,12,80,12,20,,,Earth God's Power,Shining Zork,Damage
+162,Emilia,5,3,5,40,4,5,,,Thunder Spirit's Power,Cross Layer Blitz,Damage
+163,Princess Emilia,5,4,8,60,4,5,,,Thunder God's Power,Elznet Saber,Damage
+164,Goddess Emilia,5,5,12,80,6,7,,,Thunder God's Power,Genocide Levin,Damage
+165,Knight Will,3,3,5,40,1,2,,,Light Spirit's Power,Galactic Volley,Damage
+166,Holy Knight Will,3,4,8,60,3,4,,,Light God's Power,Sacred Force,Damage
+167,God Knight Will,3,5,12,80,5,6,,,Light God's Power,Astral Nova,Damage
+168,Alice,4,3,5,40,3,3,,,Dark Spirit's Power,Shadow Insult,Damage
+169,Scythe Alice,4,4,8,60,3,7,,,Dark God's Power,Crimson Reaper,Damage
+170,Scythe God Alice,4,5,12,80,5,8,,,Dark God's Power,Abaddon Eater,Damage
+171,Fire Nyph,1,1,2,1,,,504,100,,,n/a
+172,Water Nyph,2,1,2,1,,,504,100,,,n/a
+173,Earth Nymph,6,1,2,1,,,504,100,,,n/a
+174,Thunder Nymph,5,1,2,1,,,504,100,,,n/a
+175,Light Nymph,3,1,2,1,,,504,100,,,n/a
+176,Dark Nyph,4,1,2,1,,,504,100,,,n/a
+177,Fire Spirit,1,2,5,1,,,1010,300,,,n/a
+178,Water Spirit,2,2,5,1,,,1010,300,,,n/a
+179,Earth Spirit,6,2,5,1,,,1010,300,,,n/a
+180,Thunder Spirit,5,2,5,1,,,1010,300,,,n/a
+181,Light Spirit,3,2,5,1,,,1010,300,,,n/a
+182,Dark Spirit,4,2,5,1,,,1010,300,,,n/a
+183,Fire Idol,1,3,8,1,,,1516,1000,,,n/a
+184,Water Idol,2,3,8,1,,,1516,1000,,,n/a
+185,Earth Idol,6,3,8,1,,,1516,1000,,,n/a
+186,Thunder Idol,5,3,8,1,,,1516,1000,,,n/a
+187,Light Idol,3,3,8,1,,,1516,1000,,,n/a
+188,Dark Idol,4,3,8,1,,,1516,1000,,,n/a
+189,Fire Totem,1,4,10,1,,,2000,2500,,,n/a
+190,Water Totem,2,4,10,1,,,2000,2500,,,n/a
+191,Earth Totem,6,4,10,1,,,2000,2500,,,n/a
+192,Thunder Totem,5,4,10,1,,,2000,2500,,,n/a
+193,Light Totem,3,4,10,1,,,2000,2500,,,n/a
+194,Dark Totem,4,4,10,1,,,2000,2500,,,n/a
+195,Jewel Ghost,3,2,3,1,,,206,7000,,,n/a
+196,Jewel King,3,3,6,1,,,768,20000,,,n/a
+197,Jewel God,3,4,9,1,,,1018,50000,,,n/a
+198,Metal Ghost,4,2,3,1,,,1506,1000,,,n/a
+199,Metal King,4,3,6,1,,,11012,2500,,,n/a
+200,Metal God,4,4,9,1,,,51518,5000,,,n/a
+201,Mimc,4,2,2,1,,,1004,2500,,,n/a
+202,Bat Mimic,4,4,6,1,,,3012,1000,,,n/a
+203,Blacksmith Galant,1,2,4,30,1,4,208,300,Intense Light,Focal Blast,Damage
+204,Bruiser Galant,1,3,6,40,1,5,512,1000,Intense Flash,Grenade buster,Damage
+205,God Arm Galant,1,4,10,60,1,6,1020,2500,Intense Strobe,Ignis Nebula,Damage
+206,Stya,2,2,4,30,5,5,,,Fighting Light,Glacier Circle,Damage
+207,Snow Blade Stya,2,3,6,40,7,8,,,Fighting Flash,Avalanche,Damage
+208,Frost Queen Stya,2,4,10,60,10,10,,,Fighting Strobe,Eternal Winter,Damage
+209,Boxer Nemia,6,2,4,30,3,3,,,Valiant Power,Tierra Knuckle,Damage
+210,Brawler Nemia,6,3,6,40,4,4,,,Valiant Power,Adamant Crack,Damage
+211,Gaia Fist Nemia,6,4,10,60,5,5,,,Royal Power,Grand Geyser,Damage
+212,Zeln,5,2,4,30,,3,,,Valiant Power,Quick Kick,Damage
+213,Spark Kick Zeln,5,3,6,40,,4,,,Valiant Power,Spark Kick,Damage
+214,Thunder Kick Zeln,5,4,10,60,,,,,,,Damage
+215,Traveler Alma,3,2,4,30,3,4,,,,Brave Edge,Damage
+216,Adventurer Alma,3,3,6,40,4,5,,,Pulsating Energy,Brave Impact,Damage
+217,Hero  Alma,3,4,10,60,5,7,,,Pulsating Energy,Star Dust Fall,Damage
+218,Ninja Oboro,4,2,4,30,3,4,,,Ares' Light,Ninjitsu: Blade Drop,Damage
+219,Assasin Oboro,4,3,6,40,4,5,,,Ares' Light,Assassin Dagger,Damage
+220,Shadow Oboro,4,4,10,60,5,6,,,Ares' Authority,Ritual: Foreign Demon,Damage
+221,Lancia,1,3,5,40,,H,510,1000,Pure Light,Lovely Cooking,Healing
+222,Hot Chef Lancia,1,4,8,60,,H,,,Pure Shining,Hearty Dish,Healing
+223,Head Chef Lancia,1,5,12,80,,H,,,Pure Strobe,Gourmet Dish,Healing
+224,Elimo,2,3,5,40,,H,,,Loving Spirit,Aether Guard,Healing
+225,Royal Elimo,2,4,8,60,,H,,,Loving Spirit,Aether Shield,Healing
+226,Genius Elimo,2,5,12,80,,H,,,Loving Devotion,GuardianForce,Healing
+227,Pixy Leore,6,3,5,40,,6,,,Valiant Power,Mirage Needle,Damage
+228,Pixy Royal Leore,6,4,8,60,,7,,,Royal power,Million Thrust,Damage
+229,Pixy King Leore,6,5,12,80,,10,,,Dynasty Power,Heavy Riposte,Damage
+230,Tinkerer Elulu,5,3,5,40,,2,,,Intense Light,Spark Hammer,Damage
+231,Inventor Elulu,5,4,8,60,,3,,,Intense Flash,Thunder Crush,Damage
+232,Bolt Mallet Elulu,5,5,12,80,,4,,,Intense Strobe,Lightning Smash,Damage
+233,Knight Aem,3,3,5,40,,7,,,Pulsating Energy,Dragon Slayer,Damage
+234,Champion Aem,3,4,8,60,,7,,,Pulsating Energy,God Slayer,Damage
+235,Holy Master Aem,3,5,12,80,,8,,,Pulsating Retribution,Radiant Heaven,Damage
+236,Lemia,4,3,5,40,,5,,,Soul Light,Gravity Bomb,Damage
+237,Necromancer Lemia,4,4,8,60,,6,,,Soul Flash,Glasya Labolas,Damage
+238,Soul Keeper Lemia,4,5,12,80,,8,,,Soul Strobe,Black Hole,Damage
+239,Lorand,1,3,5,40,,3,514,1000,Fire Spirit's Power,Burning Spirit,Damage
+240,Professor Lorand,1,4,8,60,,4,,,Fire God's Power,Flaming Spirit,Damage
+241,Master Lorand,1,5,12,80,,5,,,Fire God's Power,Balzing Spirit,Damage
+242,Dean,2,3,5,40,,5,,,Water Spirit's Power,Solid Ice,Damage
+243,Ice Mage Dean,2,4,8,60,,5,,,Water God's Power,Diamond Dust,Damage
+244,Ice Wizard Dean,2,5,12,80,,8,,,Water God's Power,Absolute Zero,Damage
+245,Edea,6,3,5,40,,4,,,Earth Spirit's Power,Grand Bash,Damage
+246,Earth Knight Edea,6,4,8,60,,6,,,Earth God's Power,Astro Bash,Damage
+247,Mother Earth Edea,6,5,12,80,,8,,,Earth God's Power,Grand Cross,Damage
+248,Loch,5,3,5,40,,5,,,Thunder Spirit's Power,Lightning Arrow,Damage
+249,Shock Bow Loch,5,4,8,60,,6,,,Thunder God's Power,Pulsar Fall,Damage
+250,Zeus Bow Loch,5,5,12,80,,7,,,Thunder God's Power,Rising Nova,Damage
+254,Fire Ghost,1,2,3,1,,,1506,1000,,,n/a
+255,Fire King,1,3,6,1,,,11012,2500,,,n/a
+256,Fire God,1,4,9,1,,,51518,5000,,,n/a
+257,Water Ghost,2,2,3,1,,,1506,1000,,,n/a
+258,Water King,2,3,6,1,,,11012,2500,,,n/a
+259,Water God,2,4,9,1,,,51518,5000,,,n/a
+260,Earth Ghost,6,2,3,1,,,1506,1000,,,n/a
+261,Earth King,6,3,6,1,,,11012,2500,,,n/a
+262,Earth God,6,4,9,1,,,51518,5000,,,n/a
+263,Thunder Ghost,5,2,3,1,,,1506,1000,,,n/a
+264,Thunder King,5,3,6,1,,,11012,2500,,,n/a
+265,Thunder God,5,4,9,1,,,51518,5000,,,n/a
+266,Light Ghost,3,2,3,1,,,1506,1000,,,n/a
+267,Light King,3,3,6,1,,,11012,2500,,,n/a
+268,Light God,3,4,9,1,,,51518,5000,,,
+269,,1,2,3,30,,,,,,,
+270,,1,3,5,40,,,,,,,
+271,,2,2,3,30,,,,,,,
+272,,2,3,5,40,,,,,,,
+273,,6,2,3,30,,,,,,,
+274,,6,3,5,40,,,,,,,
+275,,5,2,3,30,,,,,,,
+276,,5,3,5,40,,,,,,,
+277,,3,2,3,30,,,,,,,
+278,,3,3,5,40,,,,,,,
+279,,4,2,3,30,,,,,,,
+280,,4,3,5,40,,,,,,,
+281,,1,3,6,40,,,,,,,
+282,,2,3,6,40,,,,,,,
+283,,6,3,6,40,,,,,,,
+284,Royal Dancer May,5,3,6,40,,,512,1000,Thunder's Protection,Healing Samba,
+285,,3,3,6,40,,,,,,,
+286,,4,3,6,40,,,,,,,
+287,Drake Chief Aisha,1,3,7,40,,5,,,Pulsating Energy,Dragon Voice,Damage
+288,Drake Lord Aisha,1,3,10,60,,7,,,Pulsating Energy,Dragon Scream,Damage
+289,Drake Queen Aisha,1,5,15,80,,10,,,Pulsating Retribution,Dragon Rage,Damage
+290,Twin Gem Rickel,2,3,7,40,,6,,,Intense Light,Crystal Bullet,Damage
+291,Twin Flash Rickel,2,4,10,60,,,,,Intense Flash,Diamon Rebel,Damage
+292,Twin Shot Rickel,2,5,15,80,,14,,,Intense Strobe,Ancient Bullet,Damage
+293,Twins Il & Mina,6,3,7,40,,4,,,Emerald Wind,Star Twins,Damage
+294,Earthly Il & Mina,6,4,10,60,,6,,,Cleansing Breeze,Twins Radiation,Damage
+295,Gemini Il & Mina,6,5,15,80,,8,,,Divine Gale,Southern Cross,Damage
+296,Bolt Pike Amy,5,3,7,40,,,,,Valiant Power,Thunder Spear Attack,Damage
+297,Bolt Knight Amy,5,4,10,60,,,,,Royal Power,Thunder Spear Combo,Damage
+298,Bolt Goddess Amy,5,5,15,80,,7,,,Dynasty Power,Thunder Spear Barrage,Damage
+299,Eight Blade Sefia,3,3,7,40,,8,,,Light Spirit's Power,Halcion Hack,Damage
+300,Blade Storm Sefia,3,4,10,60,,9,,,Light God's Power,Destructive Chain,Damage
+301,Blade Queen Sefia,3,5,15,80,,10,,,Light God's Power,Sword Storm Barrage,Damage
+302,Kikuri,4,3,7,40,,6,514,1000,Dark Spirit's Power,Firefly,Damage
+303,Goth Kikuri,4,4,10,60,,8,1020,2500,Dark Spirit's Power,Ethernal Firefly,Damage
+304,Goth Idol Kikuri,4,5,15,80,,10,,,Dark Spirit's Power,Celestial Firefly,Damage
+305,Dragon Mimic,4,5,15,1,,,,,,,
+306,,1,3,1,1,,,,,,,
+307,,2,3,1,1,,,,,,,
+308,,6,3,1,1,,,,,,,
+309,,5,3,1,1,,,,,,,
+310,,3,3,1,1,,,,,,,
+311,,4,3,1,1,,,,,,,
+312,Great Thief Leon,1,4,9,60,,,,,Abundant Flash,Poisonado,Damage
+313,,2,4,9,60,,,,,,,Damage
+314,,6,4,9,60,,,,,,,Damage
+315,,5,4,9,60,,,,,,,Damage
+316,Disciple Zebra,4,4,10,60,,,,,,,
+317,,4,5,15,80,,,,,,,
+318,,1,4,10,60,,,,,,,
+319,,1,5,15,80,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,

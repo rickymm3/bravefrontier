@@ -1,6 +1,12 @@
 
 
 <p id="notice"><%= notice %></p>
+
+<p class="left">
+  <strong>Real Name:</strong>
+  <%= image_tag @unit.full_image %>
+</p>
+
 <p>
   <strong>Real Name:</strong>
   <%= @unit.realname %>
@@ -20,6 +26,17 @@
   <strong>No:</strong>
   <%= @unit.no %>
 </p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @unit.cost %>
+</p>
+
+<p>
+  <strong>Max Level:</strong>
+  <%= @unit.maxlvl %>
+</p>
+
 
 <p>
   <strong>Element:</strong>
