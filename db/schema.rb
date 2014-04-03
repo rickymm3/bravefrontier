@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140403144659) do
+ActiveRecord::Schema.define(version: 20140403162152) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "brave_bursts", force: true do |t|
+    t.string   "name"
+    t.integer  "num_hits"
+    t.string   "element_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "slug"
+  end
+
+  add_index "brave_bursts", ["slug"], name: "index_brave_bursts_on_slug", unique: true, using: :btree
 
   create_table "elements", force: true do |t|
     t.string   "name"

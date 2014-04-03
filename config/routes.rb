@@ -1,4 +1,6 @@
 Brfr::Application.routes.draw do
+  resources :brave_bursts
+
   resources :elements
 
   #devise_for :users

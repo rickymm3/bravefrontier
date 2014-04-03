@@ -1,0 +1,31 @@
+<h1>Listing brave_bursts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Num hits</th>
+      <th>Element</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @brave_bursts.each do |brave_burst| %>
+      <tr>
+        <td><%= brave_burst.name %></td>
+        <td><%= brave_burst.num_hits %></td>
+        <td><%= image_tag brave_burst.elements %></td>
+        <td><%= link_to 'Show', brave_burst %></td>
+        <td><%= link_to 'Edit', edit_brave_burst_path(brave_burst) %></td>
+        <td><%= link_to 'Destroy', brave_burst, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Brave burst', new_brave_burst_path %>

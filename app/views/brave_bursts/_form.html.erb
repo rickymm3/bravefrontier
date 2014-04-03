@@ -1,0 +1,29 @@
+<%= form_for(@brave_burst) do |f| %>
+  <% if @brave_burst.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@brave_burst.errors.count, "error") %> prohibited this brave_burst from being saved:</h2>
+
+      <ul>
+      <% @brave_burst.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :num_hits %><br>
+    <%= f.number_field :num_hits %>
+  </div>
+  <div class="field">
+    <%= f.label :element %><br>
+    <%= f.text_field :element %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

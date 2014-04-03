@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @brave_burst.name %>
+</p>
+
+<p>
+  <strong>Num hits:</strong>
+  <%= @brave_burst.num_hits %>
+</p>
+
+<p>
+  <strong>Element:</strong>
+  <%= @brave_burst.element_id %>
+</p>
+
+<%= link_to 'Edit', edit_brave_burst_path(@brave_burst) %> |
+<%= link_to 'Back', brave_bursts_path %>
