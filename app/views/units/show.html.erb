@@ -75,8 +75,11 @@
 
 <p>
   <strong>Brave burst:</strong>
-  <%- bb = BraveBurst.find(@unit.bb_id)%>
+  <%- if @unit.bb_id
+        bb = BraveBurst.find(@unit.bb_id)
+  %>
   <%= link_to bb.name, brave_burst_path(bb.slug) %>
+  <%- end %>
 </p>
 
 <p>
