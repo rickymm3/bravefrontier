@@ -44,7 +44,7 @@ group :development do
   gem 'better_errors'
   gem 'pry-rails'
 end
-
+gem 'will_paginate', '~> 3.0'
 gem "rmagick"
 gem "paperclip", "~> 4.1"
 gem 'bootstrap-wysihtml5-rails'

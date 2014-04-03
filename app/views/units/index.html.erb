@@ -1,5 +1,14 @@
 <h1>Listing units</h1>
 
+<%= form_tag units_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<%= will_paginate @posts %>
+
 <table class="table">
   <thead>
     <tr>
@@ -8,9 +17,7 @@
       <th>Name</th>
       <th>Rarity</th>
       <th>Element</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Edit</th>
     </tr>
   </thead>
 
@@ -18,13 +25,11 @@
     <% @units.each do |unit| %>
       <tr>
         <td><%= unit.no %></td>
-        <td><%= image_tag (unit.avatar) %></td>
+        <td><%= link_to (image_tag (unit.avatar)), unit %></td>
         <td><%= link_to unit.name, unit %></td>
         <td><%= unit.rarity_id.to_s %> <i class='icon-star'></i></td>
         <td><%= image_tag (unit.elements) %></td>
-        <td><%= link_to 'Show', unit %></td>
-        <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
-        <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '<i class="icon-edit"></i>'.html_safe, edit_unit_path(unit) %></td>
       </tr>
     <% end %>
   </tbody>
@@ -33,3 +38,5 @@
 <br>
 
 <%= link_to 'New Unit', new_unit_path %>
+
+<%= will_paginate @posts %>
