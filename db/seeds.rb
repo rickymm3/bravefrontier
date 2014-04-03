@@ -176,7 +176,6 @@ Unit.create!([
   {name: "Holy Knight Will", description: nil, no: 166, element_id: 3, rarity_id: 4, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: 3, slug: "holy-knight-will", realname: nil, cost: 8, max_lvl: 60},
   {name: "God Knight Will", description: nil, no: 167, element_id: 3, rarity_id: 5, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: 5, slug: "god-knight-will", realname: nil, cost: 12, max_lvl: 80},
   {name: "Alice", description: nil, no: 168, element_id: 4, rarity_id: 3, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: 3, slug: "alice", realname: nil, cost: 5, max_lvl: 40},
-  {name: "Scythe Alice", description: nil, no: 169, element_id: 4, rarity_id: 4, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: 3, slug: "scythe-alice-970f1131-e54e-444c-a8b9-82bbab157e29", realname: nil, cost: 8, max_lvl: 60},
   {name: "Scythe God Alice", description: nil, no: 170, element_id: 4, rarity_id: 5, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: 5, slug: "scythe-god-alice", realname: nil, cost: 12, max_lvl: 80},
   {name: "Fire Nyph", description: nil, no: 171, element_id: 1, rarity_id: 1, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: nil, slug: "fire-nyph", realname: nil, cost: 2, max_lvl: 1},
   {name: "Water Nyph", description: nil, no: 172, element_id: 2, rarity_id: 1, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: nil, slug: "water-nyph", realname: nil, cost: 2, max_lvl: 1},
@@ -334,5 +333,6 @@ Unit.create!([
   {name: nil, description: nil, no: nil, element_id: nil, rarity_id: nil, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: nil, slug: nil, realname: nil, cost: nil, max_lvl: nil},
   {name: nil, description: nil, no: nil, element_id: nil, rarity_id: nil, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: nil, slug: nil, realname: nil, cost: nil, max_lvl: nil},
   {name: nil, description: nil, no: nil, element_id: nil, rarity_id: nil, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: nil, slug: nil, realname: nil, cost: nil, max_lvl: nil},
-  {name: nil, description: nil, no: nil, element_id: nil, rarity_id: nil, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: nil, slug: nil, realname: nil, cost: nil, max_lvl: nil}
+  {name: nil, description: nil, no: nil, element_id: nil, rarity_id: nil, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: nil, slug: nil, realname: nil, cost: nil, max_lvl: nil},
+  {name: "Scythe Alice", description: nil, no: 169, element_id: 4, rarity_id: 4, base_hp: nil, base_atk: nil, base_def: nil, base_rec: nil, ls_id: nil, bb_id: nil, numhits: 3, slug: "scythe-alice", realname: nil, cost: 8, max_lvl: 60}
 ])
