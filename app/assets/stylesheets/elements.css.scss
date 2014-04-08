@@ -6,3 +6,33 @@
   width: 15px;
   height: auto;
 }
+.element-filters {
+  background: no-repeat;
+  ul {
+    list-style:none;
+    cursor: pointer;
+//
+//    li:first-child {
+//      border-left: 1px solid gray;
+//      border-top-left-radius: 15px;
+//      border-bottom-left-radius: 15px;
+//    }
+//    li:last-child {
+//      border-top-right-radius: 15px;
+//      border-bottom-right-radius: 15px;
+//    }
+//    li {
+//      border-right: 1px solid gray;
+//      border-top: 1px solid gray;
+//      border-bottom: 1px solid gray;
+//    }
+  }
+}
+
+.checkbox{
+    padding: 6px;
+    opacity: .5;
+}
+.checked{
+    opacity: 1;
+}

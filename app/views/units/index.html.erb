@@ -7,34 +7,11 @@
   </p>
 <% end %>
 
-<%= will_paginate @posts %>
+<%= render 'element_filter' %>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>No</th>
-      <th>Avatar</th>
-      <th>Name</th>
-      <th>Rarity</th>
-      <th>Element</th>
-      <th>Edit</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @units.each do |unit| %>
-      <tr>
-        <td><%= unit.no %></td>
-        <td><%= link_to (image_tag (unit.avatar)), unit %></td>
-        <td><%= link_to unit.name, unit %></td>
-        <td><%= unit.rarity_id.to_s %> <i class='icon-star'></i></td>
-        <td><%= image_tag (unit.elements) %></td>
-        <td><%= link_to '<i class="icon-edit"></i>'.html_safe, edit_unit_path(unit) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<div class = 'unit_list_container'>
+  <%= render 'units' %>
+</div>
 <br>
 
 <%= link_to 'New Unit', new_unit_path %>

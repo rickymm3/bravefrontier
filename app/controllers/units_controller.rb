@@ -5,7 +5,14 @@ class UnitsController < ApplicationController
   # GET /units
   # GET /units.json
   def index
-    @units = Unit.search(params[:search], params[:page])
+    @elements = Element.all
+    filters = get_filters(params[:filters])
+    @search_phrase = get_search_phrase(params[:search])
+    @units = Unit.search(@search_phrase, params[:page], filters)
+    respond_to do |format|
+      format.html
+      format.js {render layout: false}
+    end
   end
 
   # GET /units/1
@@ -64,6 +71,21 @@ class UnitsController < ApplicationController
   end
 
   private
+
+  def get_filters(filters=nil)
+    if filters
+      JSON.parse(filters)
+    else
+      filters
+    end
+  end
+
+  def get_search_phrase(search=nil)
+    if search
+      search
+    end
+  end
+
   # Use callbacks to share common setup or constraints between actions.
   def set_unit
     @unit = Unit.friendly.find(params[:id])

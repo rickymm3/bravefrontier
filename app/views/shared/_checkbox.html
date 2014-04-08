@@ -1,0 +1,47 @@
+<script>
+$(document).ready(function() {
+    $(".checkbox").click(function(){
+        $(this).toggleClass('checked')
+        // Here we check which boxes in the same group have been selected
+        // Get the current group from the class
+//        var group = $(this).attr("class");
+        var search = $("div[class*='search-value']").data('search-value');
+        var checked = [];
+        // Loop through the checked checkboxes in the same group
+        // and add their values to an array
+        $('div.element-filters ul li.checkbox').each(function(){
+            if ($(this).hasClass("checked")) {
+                checked.push($(this).data('element-id'));
+            }
+        });
+        if (checked.length < 1) {
+            $.ajax({
+                type: "GET",
+                async: true,
+                url: '/units',
+                dataType: 'script',
+                data: { search: search },
+                success: function(content){
+                    $('.content').html(content['selected'])
+                }
+            });
+        } else {
+            checked = JSON.stringify(checked);
+            $.ajax({
+                type: "GET",
+                async: true,
+                url: '/units',
+                dataType: 'script',
+                data: { filters: checked, search: search },
+                success: function(content){
+                    $('.content').html(content['selected'])
+                }
+            });
+        }
+
+
+    });
+
+
+});
+</script>

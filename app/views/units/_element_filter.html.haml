@@ -1,0 +1,6 @@
+=render 'shared/checkbox'
+%div.element-filters
+  - @elements.each do |element|
+    %ul
+      %li{class:'checkbox left', data: {element_id:element.id}}
+        = image_tag('elements/'+element.name+'.png')

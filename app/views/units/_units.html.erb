@@ -1,0 +1,33 @@
+<%= will_paginate @posts %>
+<div class="hidden search-value" data-search-value="<%= @search_phrase %>"></div>
+<table class="table">
+  <thead>
+  <tr>
+    <th>No</th>
+    <th>Avatar</th>
+    <th>Name</th>
+    <th>Rarity</th>
+    <th>Element</th>
+    <th>Edit</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @units.each do |unit| %>
+    <tr>
+      <td><%= unit.no %></td>
+      <td><%= link_to (image_tag (unit.avatar)), unit %></td>
+      <td><%= link_to unit.name, unit %></td>
+      <td><%= unit.rarity_id.to_s %> <i class='icon-star'></i></td>
+      <td><%= image_tag (unit.elements) %></td>
+      <td><%= link_to '<i class="icon-edit"></i>'.html_safe, edit_unit_path(unit) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unit', new_unit_path %>
+
+<%= will_paginate @posts %>

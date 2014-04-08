@@ -9,15 +9,42 @@ class Unit < ActiveRecord::Base
   #has_attached_file :fullpic, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "assets/missing.png"
   #validates_attachment_content_type :fullpic, :content_type => /\Aimage\/.*\Z/
 
-  def self.search(search, page)
+  def self.search(search, page, filters = nil)
+
+    if filters
+      conditions = []
+      filters.each do |filter|
+        conditions.push(" element_id = #{filter.to_s}")
+      end
+      conditions = conditions.join (' or ')
+      conditions = conditions + ')'
+      if search
+        conditions.insert(0, "lower(name) like '%#{search.downcase}%' and (")
+      end
+    elsif search
+      conditions = "lower(name) like '%#{search.downcase}%'"
+    else
+      conditions = ""
+    end
     paginate :per_page => 30, :page => page,
-             :conditions => ['lower(name) like ?', "%#{search}%".downcase],
-             :order => 'no'
+             :conditions => conditions
   end
 
-  def self.getpopularunits
-
-  end
+  #def self.search(search, page, filters)
+  #  conditions = []
+  #  if filters
+  #    filters.each do |filter|
+  #      conditions.push('element_id = '+ filter.to_s)
+  #    end
+  #    conditions = conditions.join (' or ')
+  #    conditions = conditions.insert(0,' and ')
+  #  end
+  #  conditions = conditions.insert(0,'lower(name) like ' +"'%"+search.downcase+"%' ")
+  #  puts conditions
+  #  paginate :per_page => 30, :page => page,
+  #           :conditions => conditions,
+  #           :order => 'no'
+  #end
 
   def elements
     if self.element_id
@@ -36,6 +63,21 @@ class Unit < ActiveRecord::Base
   def avatar
     s = 'units/avatars/'+self.slug.to_s+'.png'
     Image.check_image(s)
+  end
+
+  private
+  def self.get_filter_query_string(filters)
+    @string = '%'
+    top = filters.size
+    @num = 0
+    filters.each do |filter|
+      element = Element.find(filter)
+      @string = @string + element.name
+      unless @num = 0 || @num = top
+        @string = @string + 'and'
+      end
+    end
+    @string = 'and element_id equals '+@string + '%'
   end
 
 end

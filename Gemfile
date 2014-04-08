@@ -44,6 +44,7 @@ group :development do
   gem 'better_errors'
   gem 'pry-rails'
 end
+gem 'jquery-ui-rails'
 gem 'will_paginate', '~> 3.0'
 gem "rmagick"
 gem "paperclip", "~> 4.1"
