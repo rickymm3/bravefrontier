@@ -7,7 +7,9 @@
   </p>
 <% end %>
 
-<%= render 'element_filter' %>
+<div class="filters">
+  <%= render 'element_filter' %>
+</div>
 
 <div class = 'unit_list_container'>
   <%= render 'units' %>
@@ -15,5 +17,3 @@
 <br>
 
 <%= link_to 'New Unit', new_unit_path %>
-
-<%= will_paginate @posts %>
