@@ -5,23 +5,27 @@
   <thead>
   <tr>
     <th>No</th>
+    <th>Rarity</th>
     <th>Avatar</th>
     <th>Name</th>
-    <th>Rarity</th>
-    <th>Element</th>
-    <th>Edit</th>
+    <%- if current_user %>
+      <%- if current_user.is_admin? %>
+    <th>Edit
+      <%- end %>
+    <%- end %>
   </tr>
   </thead>
 
   <tbody>
   <% @units.each do |unit| %>
     <tr>
-      <td><%= unit.no %></td>
+      <td><%= sprintf '%03d', unit.no if unit.no %></td>
+      <td><%= unit.rarity_id.to_s %> <i class='icon-star'></i></td>
       <td><%= link_to (image_tag (unit.avatar)), unit %></td>
       <td><%= link_to unit.name, unit %></td>
-      <td><%= unit.rarity_id.to_s %> <i class='icon-star'></i></td>
-      <td><%= image_tag (unit.elements) %></td>
+      <%- if current_user %>
       <td><%= link_to '<i class="icon-edit"></i>'.html_safe, edit_unit_path(unit) %></td>
+      <%- end %>
     </tr>
   <% end %>
   </tbody>

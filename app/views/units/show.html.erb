@@ -77,14 +77,25 @@
   <strong>Brave burst:</strong>
   <%- if @unit.bb_id
         bb = BraveBurst.find(@unit.bb_id)
+        link_to bb.name, brave_burst_path(bb.slug) if bb
+      else
   %>
-  <%= link_to bb.name, brave_burst_path(bb.slug) %>
+    None
   <%- end %>
 </p>
 
 <p>
   <strong>Numhits:</strong>
   <%= @unit.numhits %>
+</p>
+
+<p>
+  <strong>Evolve Mats</strong>
+  <%- @materials.each do |material| %>
+    <%- unit = Unit.find_by_no(material.evolve_unit_no) %>
+    <%= unit.name %>
+    <%= link_to (image_tag (unit.avatar)), unit %>
+  <%- end %>
 </p>
 
 

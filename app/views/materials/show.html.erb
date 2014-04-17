@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @material.unit_id %>
+</p>
+
+<p>
+  <strong>Evolve unit:</strong>
+  <%= @material.evolve_unit_id %>
+</p>
+
+<%= link_to 'Edit', edit_material_path(@material) %> |
+<%= link_to 'Back', materials_path %>

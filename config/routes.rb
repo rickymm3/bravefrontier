@@ -1,4 +1,6 @@
 Brfr::Application.routes.draw do
+  resources :materials
+
   resources :news
 
   resources :brave_bursts

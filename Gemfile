@@ -40,6 +40,7 @@ gem "twitter-bootstrap-rails"
 gem "binding_of_caller"
 gem "impressionist"
 gem "friendly_id"
+gem "will_paginate-bootstrap"
 group :development do
   gem 'better_errors'
   gem 'pry-rails'

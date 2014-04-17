@@ -8,7 +8,7 @@ class UnitsController < ApplicationController
     @elements = Element.all
     filters = get_filters(params[:filters])
     @search_phrase = get_search_phrase(params[:search])
-    @units = Unit.search(@search_phrase, params[:page], filters)
+    @units = Unit.search(@search_phrase, params[:page], filters).order('no')
     respond_to do |format|
       format.html
       format.js {render layout: false}
@@ -18,7 +18,7 @@ class UnitsController < ApplicationController
   # GET /units/1
   # GET /units/1.json
   def show
-
+    @materials = Material.where(unit_id:@unit.id)
   end
 
   # GET /units/new
@@ -93,6 +93,6 @@ class UnitsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def unit_params
-    params.require(:unit).permit(:name, :prefix, :description, :no, :cost, :element_id, :rarity_id, :max_lvl, :cost, :base_hp, :base_atk, :base_def, :base_rec, :ls_id, :bb_id, :numhits)
+    params.require(:unit).permit(:realname, :name, :prefix, :description, :no, :cost, :element_id, :rarity_id, :max_lvl, :cost, :base_hp, :base_atk, :base_def, :base_rec, :ls_id, :bb_id, :numhits)
   end
 end
