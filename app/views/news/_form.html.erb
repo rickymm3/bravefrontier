@@ -15,15 +15,19 @@
     <%= f.label :heading %><br>
     <%= f.text_field :heading %>
   </div>
-  <div class="field">
+  <div class="field toolbar">
     <%= f.label :body %><br>
-    <%= f.text_field :body %>
+    <%= f.text_area :body, :class => 'wysihtml5-textarea' %>
   </div>
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+  <div class =field">
+    <%= f.label :image_loc %>
+    <%= f.text_field :image_loc %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+  <%= render 'wysihtml5/initialize.js.erb' %>
+</script>

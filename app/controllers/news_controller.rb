@@ -25,7 +25,7 @@ class NewsController < ApplicationController
   # POST /news.json
   def create
     @news = News.new(news_params)
-
+    @news.user_id = current_user.id
     respond_to do |format|
       if @news.save
         format.html { redirect_to @news, notice: 'News was successfully created.' }
@@ -69,6 +69,6 @@ class NewsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def news_params
-      params.require(:news).permit(:heading, :body, :user_id)
+      params.require(:news).permit(:heading, :body, :image_loc)
     end
 end

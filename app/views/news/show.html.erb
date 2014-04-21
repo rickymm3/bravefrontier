@@ -11,8 +11,19 @@
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong>User_id:</strong>
   <%= @news.user_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= User.find(@news.user_id).email %>
+
+</p>
+
+<p>
+  <strong>Image_loc:</strong>
+  <%= @news.image_loc %>
 </p>
 
 <%= link_to 'Edit', edit_news_path(@news) %> |

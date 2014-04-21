@@ -1,1 +1,14 @@
-'---'
+%div.news_list
+  %ul
+    -@news.each do |news|
+      %li
+        %h3
+          = news.heading.html_safe
+        %div.news_img_container{style:"background-image: url(#{news.image_loc})"}
+        %p
+          =news.body.html_safe
+        %span.time
+          =news.created_at.strftime("%b %d %Y")
+          by
+          - user = User.find(news.user_id)
+          = user.profile.username.humanize

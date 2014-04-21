@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.wysihtml5').each(function(i, elem) {
+  $('.wysihtml5-textarea').each(function(i, elem) {
     $(elem).wysihtml5({
       "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
       "emphasis": true, //Italics, bold, etc. Default true
@@ -8,8 +8,28 @@ $(document).ready(function(){
       "html": false, //Button which allows you to edit the generated HTML. Default false
       "link": true, //Button to insert a link. Default true
       "image": true, //Button to insert an image. Default true,
-      "color": false //Button to change color of font
+      "color": false, //Button to change color of font
+      "resize": true
     });
+  });
+
+  this.editor = new wysihtml5.Editor("wysihtml5-textarea");
+  this.editor.observe("load", function () {
+    var $iframe = $(this.composer.iframe);
+    var $body = $(this.composer.element);
+
+    $body
+        .css({
+          'min-height': 0,
+          'line-height': '20px',
+          'overflow': 'hidden',
+        })
+        .bind('keypress keyup keydown paste change focus blur', function(e) {
+          var height = Math.min($body[0].scrollHeight, $body.height());
+          // a little extra height to prevent spazzing out when creating newlines
+          var extra = e.type == "blur" ? 0 : 20 ;
+          $iframe.height(height + extra);
+        });
   });
 
 })

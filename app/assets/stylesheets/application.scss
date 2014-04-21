@@ -11,8 +11,8 @@
  *= require_self
  *= require_tree .
  *= require twitter-bootstrap-static/bootstrap.css.erb
- *= require bootstrap-wysihtml5
  *= require jquery.ui.all
+ *= require bootstrap-wysihtml5/b3
  */
 
 //@import 'compass/utilities/sprites';
@@ -55,7 +55,7 @@ body {
 .content {
     margin-left:30px;
     float: left;
-    max-width: 600px;
+    max-width: 800px;
     min-width: 400px;
 }
 .widgets {
@@ -118,3 +118,20 @@ td {
 
 
 //---end
+
+//wysihtml5
+
+.toolbar {
+  position:relative;
+}
+
+.wysihtml5-toolbar {
+  width: 100%
+}
+
+.wysihtml5-textarea {
+  width: 612px;
+  height: 200px;
+}
+
+//----end

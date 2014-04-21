@@ -211,6 +211,7 @@
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.3, RVM: ruby-1.9.3-p448) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.0.5, RVM: ruby-1.9.3-p448) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate-bootstrap (v1.0.0, RVM: ruby-1.9.3-p448) [gem]" level="application" />
+    <orderEntry type="library" name="compass-library" level="project" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
