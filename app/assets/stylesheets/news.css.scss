@@ -3,17 +3,36 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .news_list {
+  border-radius: 10px;
+  border: solid 3px cornflowerblue;
+  margin-bottom: 10px;
+  background-color: #D6F5FF;
   ul {
-    width: 500px;
+    margin-left: 0px;
+    width: 350px;
     list-style: none;
     li {
-
+      h4 {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top:0px;
+        background-color:white;
+      }
+      .news_body {
+        padding: 10px;
+      }
+      .time {
+        padding-right: 10px;
+        text-align: right;
+      }
     }
   }
 }
 
 .news_img_container {
-  border-radius: 10px;
-  width: 400px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: solid 3px cornflowerblue;
+  width: 350px;
   height: 120px;
 }

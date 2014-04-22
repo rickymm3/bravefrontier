@@ -1,12 +1,13 @@
 %header
-  %div.logo
-    =link_to 'LOGO HERE', root_path
-  %div.profile
-    - if user_signed_in?
-      %div.right
-        = link_to current_user.profile.username, profile_path(current_user.profile.id)
-      %br
-      %div.right
-        = link_to('Logout', destroy_user_session_path, :method => :delete)
-    - else
-      =link_to 'Login', new_user_session_path
+  %div.container
+    %div.logo
+      =link_to 'LOGO HERE', root_path
+    %div.profile
+      - if user_signed_in?
+        %div.right
+          = link_to current_user.profile.username, profile_path(current_user.profile.id)
+        %br
+        %div.right
+          = link_to('Logout', destroy_user_session_path, :method => :delete)
+      - else
+        =link_to 'Login', new_user_session_path

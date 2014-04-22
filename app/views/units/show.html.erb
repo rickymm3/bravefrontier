@@ -75,12 +75,12 @@
 
 <p>
   <strong>Brave burst:</strong>
-  <%- if @unit.bb_id
-        bb = BraveBurst.find(@unit.bb_id)
-        link_to bb.name, brave_burst_path(bb.slug) if bb
-      else
-  %>
-    None
+  <%-
+      if @unit.bb_id
+        bb = BraveBurst.find(@unit.bb_id) %>
+  <%=   link_to bb.name, brave_burst_path(bb.slug) if bb %>
+  <%- else %>
+        "None"
   <%- end %>
 </p>
 

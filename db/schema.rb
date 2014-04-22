@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140421162305) do
+ActiveRecord::Schema.define(version: 20140421173717) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -123,6 +123,18 @@ ActiveRecord::Schema.define(version: 20140421162305) do
     t.string   "realname"
     t.integer  "cost"
     t.integer  "max_lvl"
+    t.integer  "max_hp"
+    t.integer  "max_atk"
+    t.integer  "max_def"
+    t.integer  "max_rec"
+    t.integer  "a_hp"
+    t.integer  "a_rec"
+    t.integer  "b_atk"
+    t.integer  "b_def"
+    t.integer  "g_atk"
+    t.integer  "g_def"
+    t.integer  "o_hp"
+    t.integer  "o_rec"
   end
 
   add_index "units", ["slug"], name: "index_units_on_slug", unique: true, using: :btree

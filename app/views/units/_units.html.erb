@@ -22,7 +22,7 @@
       <td><%= sprintf '%03d', unit.no if unit.no %></td>
       <td><%= unit.rarity_id.to_s %> <i class='icon-star'></i></td>
       <td><%= link_to (image_tag (unit.avatar)), unit %></td>
-      <td><%= link_to unit.name, unit %></td>
+      <td><%= link_to unit.name, unit, class: 'navbar-link' %></td>
       <%- if current_user %>
       <td><%= link_to '<i class="icon-edit"></i>'.html_safe, edit_unit_path(unit) %></td>
       <%- end %>
