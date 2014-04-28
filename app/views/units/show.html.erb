@@ -48,25 +48,56 @@
   <%= @unit.rarity_id %> <i class='icon-star'></i>
 </p>
 
-<p>
-  <strong>Hp:</strong>
-  <%= @unit.base_hp %>
-</p>
 
-<p>
-  <strong>Atk:</strong>
-  <%= @unit.base_atk %>
-</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>HP</th>
+      <th>Atk</th>
+      <th>Def</th>
+      <th>Rec</th>
+    </tr>
 
-<p>
-  <strong>Def:</strong>
-  <%= @unit.base_def %>
-</p>
-
-<p>
-  <strong>Rec:</strong>
-  <%= @unit.base_rec %>
-</p>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lord</td>
+      <td><%=@unit.base_hp%></td>
+      <td><%=@unit.base_atk%></td>
+      <td><%=@unit.base_def%></td>
+      <td><%=@unit.base_rec%></td>
+    </tr>
+    <tr>
+      <td>Anima</td>
+      <td class="green"><%=@unit.a_hp%></td>
+      <td><%=@unit.base_atk%></td>
+      <td><%=@unit.base_def%></td>
+      <td class="red"><%=@unit.a_rec%></td>
+    </tr>
+    <tr>
+      <td>Breaker</td>
+      <td><%=@unit.base_hp%></td>
+      <td class="green"><%=@unit.b_atk%></td>
+      <td class="red"><%=@unit.b_def%></td>
+      <td><%=@unit.base_rec%></td>
+    </tr>
+    <tr>
+      <td>Guardian</td>
+      <td><%=@unit.base_hp%></td>
+      <td class="red"><%=@unit.g_atk%></td>
+      <td class="green"><%=@unit.g_def%></td>
+      <td><%=@unit.base_rec%></td>
+    </tr>
+    <tr>
+      <td>Oracle</td>
+      <td class="red"><%=@unit.o_hp%></td>
+      <td><%=@unit.base_atk%></td>
+      <td><%=@unit.base_def%></td>
+      <td class="green"><%=@unit.a_rec%></td>
+    </tr>
+  </tbody>
+</table>
 
 <p>
   <strong>Leader skill:</strong>

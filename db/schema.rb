@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140421173717) do
+ActiveRecord::Schema.define(version: 20140428200015) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -135,6 +135,10 @@ ActiveRecord::Schema.define(version: 20140421173717) do
     t.integer  "g_def"
     t.integer  "o_hp"
     t.integer  "o_rec"
+    t.string   "sbb"
+    t.string   "sbb_hits"
+    t.string   "bb_refill"
+    t.integer  "bb_hits"
   end
 
   add_index "units", ["slug"], name: "index_units_on_slug", unique: true, using: :btree
