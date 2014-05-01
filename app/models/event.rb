@@ -3,4 +3,7 @@ class Event < ActiveRecord::Base
 
   #delegate :username, to: :profile, prefix: true, allow_nil: true
 
+  def self.active_events
+    Event.where("end_date > '#{Time.now.to_s(:db)}'")
+  end
 end

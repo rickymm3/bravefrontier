@@ -1,4 +1,4 @@
-- events = Event.where("end_date > '#{Time.now.to_s(:db)}'")
+- events = Event.active_events
 %h4 Current Events
 %div.event-widget
   %ul
