@@ -71,7 +71,7 @@
       <file leaf-file-name="_events.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/widgets/_events.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="35" selection-start="166" selection-end="166" vertical-scroll-proportion="0.12987013" vertical-offset="0" max-vertical-offset="693">
+            <state line="7" column="10" selection-start="173" selection-end="173" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="693">
               <folding />
             </state>
           </provider>
@@ -995,7 +995,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/widgets/_events.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="166" selection-end="166" vertical-scroll-proportion="0.12987013" vertical-offset="0" max-vertical-offset="693">
+        <state line="7" column="10" selection-start="173" selection-end="173" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="693">
           <folding />
         </state>
       </provider>
