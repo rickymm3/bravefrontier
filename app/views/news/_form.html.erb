@@ -23,11 +23,37 @@
     <%= f.label :image_loc %>
     <%= f.text_field :image_loc %>
   </div>
+  <div class ="field">
+    <%= f.label 'has event associated?', class:'left' %>
+    <%= f.check_box :check_event, name:'check_event', id:'check_event' %>
+  </div>
+  <div id='event-hide' class="none">
+    <h4>event details</h4>
+    <hr>
+    <div>
+      <%= f.fields_for :event_attributes do |ef| %>
+        <div><%= ef.label :subject %><br />
+          <%= ef.text_field :subject %></div>
+        <div><%= ef.label :description %><br />
+          <%= ef.text_field :description %></div>
+        <div><%= ef.label :start_date %><br />
+          <%= ef.datetime_select :start_date %></div>
+        <div><%= ef.label :end_date %><br />
+          <%= ef.datetime_select :end_date %></div>
+        <div><%= ef.label :image_loc %><br />
+          <%= ef.text_field :image_loc %></div>
+      <%end%>
+    </div>
+  </div>
+  <br>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
 
 <script type="text/javascript">
-  <%= render 'wysihtml5/initialize.js.erb' %>
+  $(document).ready(function() {
+    <%= render 'news/checkbox_action.js.erb' %>
+    <%= render 'wysihtml5/initialize.js.erb' %>
+  });
 </script>

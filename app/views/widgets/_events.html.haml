@@ -1,0 +1,7 @@
+- events = Event.where("end_date > '#{Time.now.to_s(:db)}'")
+%h4 Current Events
+%div.event-widget
+  %ul
+    - events.each do |event|
+      %li.event-widget-item
+        =image_tag  "#{event.image_loc}", :class => "event-widget-img"

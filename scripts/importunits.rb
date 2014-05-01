@@ -51,10 +51,10 @@ CSV.foreach("/Users/rmason202/Code/brfr/scripts/csv/bfunitsall.csv") do |row|
   unit.bb_refill = row[8]
   if unit.base_hp != '--'
     if row[13] == 'Lord'
-      unit.base_hp = row[9]
-      unit.base_atk = row[10]
-      unit.base_def = row[11]
-      unit.base_rec = row[12]
+      unit.max_hp = row[9]
+      unit.max_atk = row[10]
+      unit.max_def = row[11]
+      unit.max_rec = row[12]
     elsif row[13] == 'Anima'
       unit.a_hp = row[9]
       unit.a_rec = row[12]

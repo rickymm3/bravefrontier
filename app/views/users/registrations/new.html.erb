@@ -12,10 +12,10 @@
   <%end%>
 
   <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+  <%= f.password_field :password, title: '8 to 16 characters', pattern:'.{8,16}'  %></div>
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+  <div><%= f.label :password_confirmation%><br />
+  <%= f.password_field :password_confirmation, title: '8 to 16 characters', pattern:'.{8,16}' %></div>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>

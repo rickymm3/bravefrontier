@@ -26,7 +26,7 @@ class Unit < ActiveRecord::Base
     else
       conditions = ""
     end
-    paginate :per_page => 30, :page => page,
+    paginate :per_page => 50, :page => page,
              :conditions => conditions
   end
 

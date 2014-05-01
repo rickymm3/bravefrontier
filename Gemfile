@@ -39,14 +39,15 @@ gem "active_model_serializers"
 gem "twitter-bootstrap-rails"
 gem "binding_of_caller"
 gem "impressionist"
+
 gem "friendly_id"
-gem "will_paginate-bootstrap"
 group :development do
   gem 'better_errors'
   gem 'pry-rails'
 end
 gem 'jquery-ui-rails'
-gem 'will_paginate', '~> 3.0'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 gem "rmagick"
 gem "paperclip", "~> 4.1"
 gem 'bootstrap-wysihtml5-rails'

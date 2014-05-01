@@ -1,5 +1,5 @@
 </br></br>
-<%= will_paginate @posts %>
+<div class="pagination"><%= will_paginate @posts, renderer: BootstrapPagination::Rails %></div>
 <div class="hidden search-value" data-search-value="<%= @search_phrase %>"></div>
 <table class="table">
   <thead>
@@ -15,7 +15,6 @@
     <%- end %>
   </tr>
   </thead>
-
   <tbody>
   <% @units.each do |unit| %>
     <tr>
@@ -34,5 +33,4 @@
 <br>
 
 <%= link_to 'New Unit', new_unit_path %>
-
-<%= will_paginate @posts %>
+<div class="pagination"><%= will_paginate @posts, renderer: BootstrapPagination::Rails %></div>

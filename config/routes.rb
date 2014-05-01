@@ -1,4 +1,6 @@
 Brfr::Application.routes.draw do
+  resources :events
+
   resources :materials
 
   resources :news

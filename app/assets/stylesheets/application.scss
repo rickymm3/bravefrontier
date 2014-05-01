@@ -59,11 +59,14 @@ header {
 body {
 
 .content {
-  width: 70%;
+  width: 68%;
+  padding-right: 1%;
+  border-right: 1px solid gray;
   float: left;
 }
 .widgets {
-  width: 30%;
+  padding-left: 1%;
+  width: 29%;
   float: right;
 }
 }
@@ -125,6 +128,10 @@ td {
 
 .green {
   color: green;
+}
+
+.none {
+  display: none;
 }
 
 //bootstrap willpaginate css
