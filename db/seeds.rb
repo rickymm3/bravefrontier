@@ -1,3 +1,7 @@
+User.create!([
+  {email: "bob@aol.com", encrypted_password: "$2a$10$JJs4BU3OwDe6azrOZDefO./vF3u1J7I2Gbd7U0cR5rIzMtLLU.eDK", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2014-04-29 18:49:55", last_sign_in_at: "2014-04-29 18:49:55", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", is_admin: nil},
+  {email: "rickymm3@gmail.com", encrypted_password: "$2a$10$2Q1TbR.to2tBpWGNNvQIP.TwmvZs20B92JEEbSNv4e5KXgkYXza2W", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 6, current_sign_in_at: "2014-04-30 19:39:56", last_sign_in_at: "2014-04-28 21:17:17", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", is_admin: true}
+])
 BraveBurst.create!([
   {name: "Flare Ride", num_hits: 5, element_id: "1", slug: "flare-ride"},
   {name: "Flare Ride Plus", num_hits: 5, element_id: "1", slug: "flare-ride-plus"},

@@ -27,7 +27,6 @@ class NewsController < ApplicationController
     if news_params['event_attributes']['image_loc'].blank?
       news_params2 = news_params.except('event_attributes')
     end
-    ERROR
     @news = News.new(news_params2)
     @news.user_id = current_user.id
 
