@@ -1,7 +1,3 @@
-User.create!([
-  {email: "bob@aol.com", encrypted_password: "$2a$10$JJs4BU3OwDe6azrOZDefO./vF3u1J7I2Gbd7U0cR5rIzMtLLU.eDK", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2014-04-29 18:49:55", last_sign_in_at: "2014-04-29 18:49:55", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", is_admin: nil},
-  {email: "rickymm3@gmail.com", encrypted_password: "$2a$10$2Q1TbR.to2tBpWGNNvQIP.TwmvZs20B92JEEbSNv4e5KXgkYXza2W", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 6, current_sign_in_at: "2014-04-30 19:39:56", last_sign_in_at: "2014-04-28 21:17:17", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", is_admin: true}
-])
 BraveBurst.create!([
   {name: "Flare Ride", num_hits: 5, element_id: "1", slug: "flare-ride"},
   {name: "Flare Ride Plus", num_hits: 5, element_id: "1", slug: "flare-ride-plus"},
@@ -261,12 +257,6 @@ News.create!([
   {heading: "New Heroes Arrive - Lodin, Zelban and Duel GX II!", body: "<div><img alt=\"\"><img alt=\"\">The Rare Summon gate explodes with the combined energies of Dark, Thunder and Earth as three new units appear! Brace yourselves - Drake God Lodin, Blade Hero Zelban and Duel-GX II have arrived!&nbsp;<br></div><div><div><br>From the jaws of the unknown, snatch this opportunity for victory! Summon them NOW and seize the future!</div></div>", user_id: 1, image_loc: "/assets/news/april14/newheroes.jpg"},
   {heading: "New News", body: "This is new news. &nbsp;Is having an image required?&nbsp;<br><br>In the vein of keeping things easy -- i think it should be. &nbsp;But lets see what happens when it isn't.", user_id: 1, image_loc: ""},
   {heading: "New Battle Maiden Released", body: "Enter the new Vortex dungeon to obtain the new Water Battle Mained, Serin.", user_id: 1, image_loc: "/assets/news/events/maidenblue.jpg"}
-])
-Profile.create!([
-  {username: "rickymm3", description: nil, user_id: 1},
-  {username: "bobbyjoe", description: nil, user_id: 2},
-  {username: "asdkajshd", description: nil, user_id: 3},
-  {username: "bob", description: nil, user_id: 4}
 ])
 Unit.create!([
   {name: "Ice Queen Selena", description: nil, no: 7, element_id: 2, rarity_id: 4, base_hp: 3055, base_atk: 1170, base_def: 901, base_rec: 1195, ls_id: nil, bb_id: 7, numhits: 4, slug: "ice-queen-selena", realname: "Selena", cost: 8, max_lvl: 60, max_hp: 3055, max_atk: 1170, max_def: 901, max_rec: 1195, a_hp: 3508, a_rec: 1079, b_atk: 1346, b_def: 826, g_atk: 1052, g_def: 1024, o_hp: 2612, o_rec: 1306, sbb: nil, sbb_hits: "0", bb_refill: "0", bb_hits: 7},
