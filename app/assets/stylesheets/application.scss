@@ -10,7 +10,7 @@
  *
  *= require_self
  *= require_tree .
- *= require twitter-bootstrap-static/bootstrap.css.erb
+ *= require bootstrap.min
  *= require jquery.ui.all
  *= require bootstrap-wysihtml5/b3
  */
@@ -19,6 +19,14 @@
 @import 'elements/*.png';
 @import 'resize';
 @import 'compass/css3';
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../assets/glyphicons-halflings-regular.eot');
+  src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/glyphicons-halflings-regular.woff') format('woff'),
+  url('../assets/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
 $elements-sprite-dimensions: true;
 @include all-elements-sprites;
 
@@ -51,28 +59,11 @@ header {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
+
 }
 
 body {
 
-.content {
-  width: 68%;
-  padding-right: 1%;
-  border-right: 1px solid gray;
-  float: left;
-}
-.widgets {
-  padding-left: 1%;
-  width: 29%;
-  float: right;
-}
-}
-
-.right {
-    float: right;
 }
 
 .left {

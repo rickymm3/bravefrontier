@@ -61,7 +61,7 @@ class Unit < ActiveRecord::Base
   end
 
   def avatar
-    s = 'units/avatars/'+self.slug.to_s+'.png'
+    s = "units/avatars/#{self.slug.to_s}.png"
     Image.check_image(s)
   end
 

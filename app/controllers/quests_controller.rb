@@ -1,5 +1,6 @@
 class QuestsController < ApplicationController
   before_action :set_quest, only: [:show, :edit, :update, :destroy]
+  before_action :check_admin, only: [:new, :edit, :create, :update, :destroy]
 
   # GET /quests
   # GET /quests.json
@@ -62,13 +63,23 @@ class QuestsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_quest
-      @quest = Quest.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def quest_params
-      params.require(:quest).permit(:name, :world_id, :mission_id)
+  # Use callbacks to share common setup or constraints between actions.
+  def set_quest
+    @quest = Quest.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def quest_params
+    params.require(:quest).permit(:name, :world_id, :mission_id)
+  end
+
+  def check_admin
+    if current_user
+      redirect_to(root_path) unless current_user.is_admin?
+    else
+      redirect_to(root_path)
     end
+  end
+
 end

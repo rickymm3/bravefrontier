@@ -6,16 +6,21 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     %meta{name:"viewport", content:"width=device-width, initial-scale=1.0"}
     = csrf_meta_tags
-%body
-  =render 'layouts/header'
-  %div.container
-    =render 'layouts/nav'
-    =render 'layouts/messages'
-    %div.content
-      = yield
-    %div.widgets
-      %p
-        =render 'widgets/events'
-      %p Top 5 Tier List
-      %p wid3
+  %body
+    =render 'layouts/header'
+    %div.container
+      %div.row
+        %div.col-md-12=render 'layouts/nav'
+      %div.row
+        %div.col-md-12=render 'layouts/messages'
+      %div.row
+        %div.left-column.col-lg-9
+          = yield
+        %div.right-column.col-lg-3
+          %div.widgets
+            %p
+              =render 'widgets/events'
+            %p Top 5 Tier List
+            %p wid3
   %footer
+
